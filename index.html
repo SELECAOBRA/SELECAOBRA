@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090f1d">
+  <meta name="description" content="Calculadora de pontuação para eventos de corrida.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora de Pontos</title>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <div class="brand"><span class="brand__mark" aria-hidden="true">🏁</span><div><p class="eyebrow">BATALHA DE PISTAS</p><h1>Calculadora de Pontos</h1></div></div>
+      <button class="button button--ghost" id="clearButton" type="button">Limpar</button>
+    </div>
+  </header>
+  <main class="container">
+    <noscript><p class="notice notice--error">Este site precisa de JavaScript para calcular a pontuação.</p></noscript>
+    <p id="status" class="notice" role="status" aria-live="polite">Carregando configuração…</p>
+    <section id="calculator" class="hidden" aria-label="Calculadora">
+      <div class="panel setup">
+        <label class="field"><span>Evento</span><select id="eventSelect"></select></label>
+        <label class="field"><span>Veículo</span><input id="vehicleInput" type="text" maxlength="40" autocomplete="off" placeholder="Ex.: CC-EV"></label>
+        <div class="event-title"><span id="eventLabel" class="pill"></span><h2 id="eventName"></h2><small id="updatedAt"></small></div>
+      </div>
+      <div id="tracks" class="tracks"></div>
+      <section class="total-card" aria-label="Pontuação total">
+        <div><span>Total do evento</span><small id="completedText">0 pistas preenchidas</small></div>
+        <strong id="totalScore">0</strong><span class="total-card__unit">pts</span>
+      </section>
+      <p class="footnote" id="limitsText"></p>
+    </section>
+  </main>
+  <template id="trackTemplate">
+    <article class="track-card">
+      <div class="track-card__head"><div><span class="track-number"></span><h3 class="track-name"></h3></div><span class="track-type pill"></span></div>
+      <label class="field"><span class="input-label"></span><div class="input-wrap"><input class="track-input" type="text" inputmode="decimal" autocomplete="off" placeholder="0,000"><span class="unit"></span></div><small class="error" aria-live="polite"></small></label>
+      <div class="score-row"><span>Pontuação</span><strong class="track-score">—</strong></div>
+    </article>
+  </template>
+  <script src="app.js" defer></script>
+</body>
+</html>
