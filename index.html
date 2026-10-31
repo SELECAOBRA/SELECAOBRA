@@ -20,25 +20,28 @@
     <noscript><p class="notice notice--error">Este site precisa de JavaScript para calcular a pontuação.</p></noscript>
     <p id="status" class="notice" role="status" aria-live="polite">Carregando configuração…</p>
     <section id="calculator" class="hidden" aria-label="Calculadora">
-      <div class="panel setup">
-        <label class="field"><span>Evento</span><select id="eventSelect"></select></label>
-        <label class="field"><span>Veículo</span><input id="vehicleInput" type="text" maxlength="40" autocomplete="off" placeholder="Ex.: CC-EV"></label>
-        <div class="event-title"><span id="eventLabel" class="pill"></span><h2 id="eventName"></h2><small id="updatedAt"></small></div>
+      <div class="panel setup compact-setup">
+        <label class="field event-picker"><span>Evento</span><select id="eventSelect"></select></label>
+        <div class="event-title"><span id="eventLabel" class="pill"></span><strong id="eventName"></strong><small id="updatedAt"></small></div>
       </div>
-      <div id="tracks" class="tracks"></div>
-      <section class="total-card" aria-label="Pontuação total">
-        <div><span>Total do evento</span><small id="completedText">0 pistas preenchidas</small></div>
-        <strong id="totalScore">0</strong><span class="total-card__unit">pts</span>
-      </section>
+      <div class="table-wrap">
+        <table class="score-table">
+          <thead><tr><th>Pista</th><th>Tipo</th><th>Tempo / Distância</th><th>Pontuação</th></tr></thead>
+          <tbody id="tracks"></tbody>
+          <tfoot><tr><th colspan="3">TOTAL</th><th><span id="totalScore">0</span> pts</th></tr></tfoot>
+        </table>
+      </div>
+      <p id="completedText" class="completed-text">0 pistas preenchidas</p>
       <p class="footnote" id="limitsText"></p>
     </section>
   </main>
   <template id="trackTemplate">
-    <article class="track-card">
-      <div class="track-card__head"><div><span class="track-number"></span><h3 class="track-name"></h3></div><span class="track-type pill"></span></div>
-      <label class="field"><span class="input-label"></span><div class="input-wrap"><input class="track-input" type="text" inputmode="decimal" autocomplete="off" placeholder="0,000"><span class="unit"></span></div><small class="error" aria-live="polite"></small></label>
-      <div class="score-row"><span>Pontuação</span><strong class="track-score">—</strong></div>
-    </article>
+    <tr class="track-row">
+      <th scope="row" class="track-name"></th>
+      <td><span class="track-type"></span></td>
+      <td><div class="compact-input"><input class="track-input" type="text" inputmode="decimal" autocomplete="off" placeholder="0,000"><span class="unit"></span></div><small class="error" aria-live="polite"></small></td>
+      <td class="track-score">—</td>
+    </tr>
   </template>
   <script src="app.js" defer></script>
 </body>
