@@ -11,15 +11,15 @@
       "tracks": [
         {"id":"track-1","name":"Pista 1","type":"time","unit":"s","a":13.672222298515834,"b":-957.0555608961083,"c":17748.472315681898},
         {"id":"track-2","name":"Pista 2","type":"time","unit":"s","a":4.983943189224483,"b":-598.073182706938,"c":18942.19548120814},
-        {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":16.646848989298455,"b":-1298.4542211652795,"c":26319.85731272295},
-        {"id":"track-4","name":"Pista 4","type":"time","unit":"s","a":7.571660356949702,"b":-757.1660356949702,"c":19929.150892374255},
+        {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":7.57166,"b":-757.1660357,"c":19929.15089},
+        {"id":"track-4","name":"Pista 4","type":"time","unit":"s","a":5.83090,"b":-641.3994169,"c":18638.48397},
         {"id":"track-5","name":"Pista 5","type":"time","unit":"s","a":1.4879370815176958,"b":-357.104899564247,"c":22426.29397385482}
       ]
     },
     {
       "id": "previous-placeholder",
       "label": "Evento anterior",
-      "name": "Evento anterior - configurar",
+      "name": "Evento anterior - vazio",
       "tracks": [
         {"id":"track-1","name":"Pista 1","type":"time","unit":"s","a":13.672222298515834,"b":-957.0555608961083,"c":17748.472315681898},
         {"id":"track-2","name":"Pista 2","type":"time","unit":"s","a":4.983943189224483,"b":-598.073182706938,"c":18942.19548120814},
