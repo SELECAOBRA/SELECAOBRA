@@ -53,17 +53,22 @@ function update() {
 
   teamScore.textContent = String(total);
 
+  const usedPositions = new Set();
+
   positions.forEach((input) => {
     const raw = input.value.trim();
     const position = parsePosition(raw);
 
-    // Campo vazio ou posição inválida = 0 pontos.
-    const points = position === null ? 0 : 51 - position;
+    let points = 0;
 
-    input.classList.toggle(
-      'invalid',
-      raw !== '' && position === null
-    );
+    // Uma posição válida só pontua na primeira ocorrência.
+    // Campo vazio, inválido ou posição repetida vale 0 pontos.
+    if (position !== null && !usedPositions.has(position)) {
+      points = 51 - position;
+      usedPositions.add(position);
+    }
+
+    input.classList.remove('invalid');
 
     input
       .closest('tr')
