@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090f1d">
+  <meta name="description" content="Calculadora de pontuação do Grand Prix.">
+  <link rel="stylesheet" href="grandprix.css?v=1">
+  <title>Calculadora do Grand Prix</title>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <a class="brand" href="index.html" aria-label="Voltar para a calculadora de batalha">
+        <img class="brand__logo" src="images/logo.png" alt="Seleção BR">
+        <div><p>GRAND PRIX</p><h1>Calculadora do Grand Prix</h1></div>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a class="button" href="index.html">Batalha</a>
+        <button class="button" id="clearButton" type="button">Limpar</button>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="panel" aria-labelledby="calculatorTitle">
+      <h2 id="calculatorTitle">Projeção da equipe</h2>
+      <label class="team-field">
+        <span>Pontuação atual da equipe</span>
+        <input id="teamScore" type="text" inputmode="numeric" autocomplete="off" placeholder="0" aria-describedby="teamError">
+        <small id="teamError" class="error" aria-live="polite"></small>
+      </label>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Jogador</th><th>Posição</th><th>Pontuação</th></tr></thead>
+          <tbody id="players">
+            <tr><th scope="row">1</th><td><input class="position" type="text" inputmode="numeric" autocomplete="off" placeholder="1–40" aria-label="Posição do jogador 1"></td><td class="points">0</td></tr>
+            <tr><th scope="row">2</th><td><input class="position" type="text" inputmode="numeric" autocomplete="off" placeholder="1–40" aria-label="Posição do jogador 2"></td><td class="points">0</td></tr>
+            <tr><th scope="row">3</th><td><input class="position" type="text" inputmode="numeric" autocomplete="off" placeholder="1–40" aria-label="Posição do jogador 3"></td><td class="points">0</td></tr>
+            <tr><th scope="row">4</th><td><input class="position" type="text" inputmode="numeric" autocomplete="off" placeholder="1–40" aria-label="Posição do jogador 4"></td><td class="points">0</td></tr>
+          </tbody>
+          <tfoot><tr><th colspan="2">PROJEÇÃO FINAL</th><th id="grandTotal">0</th></tr></tfoot>
+        </table>
+      </div>
+      <p class="rule">Pontuação por jogador = 51 − posição. Campos vazios ou inválidos valem 0.</p>
+    </section>
+  </main>
+  <script src="grandprix.js?v=1" defer></script>
+</body>
+</html>
