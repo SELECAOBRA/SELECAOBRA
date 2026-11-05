@@ -1,0 +1,15 @@
+{
+  "updatedAt": "2026-11-05",
+  "teams": [
+    { "name": "Equipe 1", "score": 230 },
+    { "name": "Equipe 2", "score": 215 },
+    { "name": "Equipe 3", "score": 200 },
+    { "name": "Equipe 4", "score": 185 },
+    { "name": "Equipe 5", "score": 170 },
+    { "name": "Equipe 6", "score": 155 },
+    { "name": "Equipe 7", "score": 140 },
+    { "name": "Equipe 8", "score": 125 },
+    { "name": "Equipe 9", "score": 110 },
+    { "name": "Equipe 10", "score": 95 }
+  ]
+}
