@@ -5,6 +5,17 @@
   "scoreMax": 15000,
   "events": [
     {
+      "id": "Arise, Wheel - 13-11-26",
+      "label": "13/11/26",
+      "name": "Arise, Wheel",
+      "tracks": [
+        {"id":"track-1","name":"Pista 1","type":"time","unit":"s","a":10.22673, "b":-859.04528, "c":19039.95081},
+        {"id":"track-2","name":"Pista 2","type":"distance","unit":"m","a":0.02857, "b":0.00000, "c":1000.00000},
+        {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":10.22634, "b":-859.01254, "c":19039.26337},
+        {"id":"track-4","name":"Pista 4","type":"time","unit":"s","a":9.69548, "b":-814.42027, "c":18102.82569}
+      ]
+    },
+     {
       "id": "Steel Car Run - 06-11-26",
       "label": "06/11/26",
       "name": "Steel Car Run",
@@ -13,18 +24,6 @@
         {"id":"track-2","name":"Pista 2","type":"time","unit":"s","a":12.85577,"b":-1079.88455,"c":23677.57555},
         {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":10.80261,"b":-972.23472,"c":22875.28116},
         {"id":"track-4","name":"Pista 4","type":"distance","unit":"m","a":5.83090,"b":0,"c":1000}
-      ]
-    },
-     {
-      "id": "after-hours-rider - 30-10-26",
-      "label": "30/10/26",
-      "name": "After-Hours Rider",
-      "tracks": [
-        {"id":"track-1","name":"Pista 1","type":"time","unit":"s","a":13.672222298515834,"b":-957.0555608961083,"c":17748.472315681898},
-        {"id":"track-2","name":"Pista 2","type":"time","unit":"s","a":4.983943189224483,"b":-598.073182706938,"c":18942.19548120814},
-        {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":7.57166,"b":-757.1660357,"c":19929.15089},
-        {"id":"track-4","name":"Pista 4","type":"time","unit":"s","a":5.83090,"b":-641.3994169,"c":18638.48397},
-        {"id":"track-5","name":"Pista 5","type":"time","unit":"s","a":1.4879370815176958,"b":-357.104899564247,"c":22426.29397385482}
       ]
     }
   ]
