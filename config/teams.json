@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-11",
   "teams": [
-    { "name": "Areia", "score": 588 },
-    { "name": "Neve", "score": 561 },
-    { "name": "Vento", "score": 508 },
-    { "name": "Água", "score": 528 },
-    { "name": "Pista", "score": 494 },
-    { "name": "Asfalto", "score": 434 },
-    { "name": "Lama", "score": 429 },
-    { "name": "Rocha", "score": 454 },
-    { "name": "Fogo", "score": 474 },
-    { "name": "Cascalho", "score": 410 }
+    { "name": "Neve", "score": 709 },
+    { "name": "Areia", "score": 695 },
+    { "name": "Água", "score": 681 },
+    { "name": "Vento", "score": 661 },
+    { "name": "Pista", "score": 621 },
+    { "name": "Fogo", "score": 599 },
+    { "name": "Rocha", "score": 559 },
+    { "name": "Lama", "score": 545 },
+    { "name": "Asfalto", "score": 518 },
+    { "name": "Cascalho", "score": 512 }
   ]
 }
