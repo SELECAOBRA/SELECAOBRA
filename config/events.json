@@ -1,10 +1,21 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-20",
   "scoreMin": 1000,
   "scoreMax": 15000,
   "events": [
     {
+      "id": "Sky Fly Racing - 20-11-26",
+      "label": "20/11/26",
+      "name": "Sky Fly Racing",
+      "tracks": [
+        {"id":"track-1","name":"Pista 1","type":"time","unit":"s","a":11.42830, "b":-959.97744, "c":21159.52618},
+        {"id":"track-2","name":"Pista 2","type":"time","unit":"s","a":5.38286, "b":-645.94282, "c":20378.28454},
+        {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":5.17749, "b":-621.29829, "c":19638.94867},
+        {"id":"track-4","name":"Pista 4","type":"distance","unit":"m","a":0.00547, "b":0.00000, "c":1000.00000}
+      ]
+    },
+     {
       "id": "Arise, Wheel - 13-11-26",
       "label": "13/11/26",
       "name": "Arise, Wheel",
@@ -13,17 +24,6 @@
         {"id":"track-2","name":"Pista 2","type":"distance","unit":"m","a":0.02857, "b":0.00000, "c":1000.00000},
         {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":10.22634, "b":-859.01254, "c":19039.26337},
         {"id":"track-4","name":"Pista 4","type":"time","unit":"s","a":9.69548, "b":-814.42027, "c":18102.82569}
-      ]
-    },
-     {
-      "id": "Steel Car Run - 06-11-26",
-      "label": "06/11/26",
-      "name": "Steel Car Run",
-      "tracks": [
-        {"id":"track-1","name":"Pista 1","type":"distance","unit":"m","a":0.05600,"b":0,"c":1000},
-        {"id":"track-2","name":"Pista 2","type":"time","unit":"s","a":12.85577,"b":-1079.88455,"c":23677.57555},
-        {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":10.80261,"b":-972.23472,"c":22875.28116},
-        {"id":"track-4","name":"Pista 4","type":"distance","unit":"m","a":5.83090,"b":0,"c":1000}
       ]
     }
   ]
