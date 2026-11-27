@@ -1,10 +1,21 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-27",
   "scoreMin": 1000,
   "scoreMax": 15000,
   "events": [
     {
+      "id": "Beam There, Done That - 27-11-26",
+      "label": "27/11/26",
+      "name": "Beam There, Done That",
+      "tracks": [
+        {"id":"track-1","name":"Pista 1","type":"distance","unit":"m","a":0.01601, "b":0.00000, "c":1000.00000},
+        {"id":"track-2","name":"Pista 2","type":"time","unit":"s","a":6.33797, "b":-659.14864, "c":18137.86464},
+        {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":7.23105, "b":-795.41550, "c":22873.92638},
+        {"id":"track-4","name":"Pista 4","type":"time","unit":"s","a":10.80215, "b":-907.38049, "c":20054.99031}
+      ]
+    },
+     {
       "id": "Sky Fly Racing - 20-11-26",
       "label": "20/11/26",
       "name": "Sky Fly Racing",
@@ -13,17 +24,6 @@
         {"id":"track-2","name":"Pista 2","type":"time","unit":"s","a":5.38286, "b":-645.94282, "c":20378.28454},
         {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":5.17749, "b":-621.29829, "c":19638.94867},
         {"id":"track-4","name":"Pista 4","type":"distance","unit":"m","a":0.00547, "b":0.00000, "c":1000.00000}
-      ]
-    },
-     {
-      "id": "Arise, Wheel - 13-11-26",
-      "label": "13/11/26",
-      "name": "Arise, Wheel",
-      "tracks": [
-        {"id":"track-1","name":"Pista 1","type":"time","unit":"s","a":10.22673, "b":-859.04528, "c":19039.95081},
-        {"id":"track-2","name":"Pista 2","type":"distance","unit":"m","a":0.02857, "b":0.00000, "c":1000.00000},
-        {"id":"track-3","name":"Pista 3","type":"time","unit":"s","a":10.22634, "b":-859.01254, "c":19039.26337},
-        {"id":"track-4","name":"Pista 4","type":"time","unit":"s","a":9.69548, "b":-814.42027, "c":18102.82569}
       ]
     }
   ]
